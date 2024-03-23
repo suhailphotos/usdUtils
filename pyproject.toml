@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "usdutils"
+version = "0.1.0"
+description = "USD Utilitis"
+authors = ["Suhail"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.10"
+numpy = "^1.26.4"
+cmake = "^3.28.4"
+pyopengl = "^3.1.7"
+pyside6 = "^6.6.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+preactivate = 'export USD_INSTALL_ROOT="/Users/suhail/openUSD/built" && export PYTHONPATH="$USD_INSTALL_ROOT/lib/python" && export PATH="$USD_INSTALL_ROOT/bin:$PATH"'
+postdeactivate = 'unset USD_INSTALL_ROOT PYTHONPATH PATH'
