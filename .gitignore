@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Ignore Houdini Geometry Folder
+glb2usd/
+
 # Distribution / packaging
 .Python
 build/
