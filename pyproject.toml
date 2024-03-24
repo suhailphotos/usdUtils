@@ -18,6 +18,4 @@ pyside6 = "^6.6.2"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.scripts]
-preactivate = 'export USD_INSTALL_ROOT="/Users/suhail/openUSD/built" && export PYTHONPATH="$USD_INSTALL_ROOT/lib/python" && export PATH="$USD_INSTALL_ROOT/bin:$PATH"'
-postdeactivate = 'unset USD_INSTALL_ROOT PYTHONPATH PATH'
+
