@@ -2,7 +2,7 @@
 name = "usdutils"
 version = "0.1.0"
 description = "USD Utilitis"
-authors = ["Suhail"]
+authors = ["Suhail <suhailece@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
@@ -19,5 +19,3 @@ pyfbx = "^0.0.8"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-
