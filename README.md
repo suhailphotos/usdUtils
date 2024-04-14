@@ -15,6 +15,7 @@ The purpose of this repository is to explore and develop utilities that streamli
 
 To maintain consistency and organization within USD projects, this repository follows a recommended folder structure for organizing assets, shots, sequences, configurations, and outputs. The folder structure used in this repository is as follows:
 
+```markdown
 project_name/
 ├── assets/
 │   ├── models/
@@ -42,7 +43,7 @@ project_name/
 └── output/
     ├── renders/
     └── exports/
-
+```
 
 
 This structure provides a clear organization for managing assets, shots, sequences, configurations, and outputs within a USD project.
