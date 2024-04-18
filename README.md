@@ -16,94 +16,109 @@ The purpose of this repository is to explore and develop utilities that streamli
 To maintain consistency and organization within USD projects, this repository follows a recommended folder structure for organizing assets, shots, sequences, configurations, and outputs. The folder structure used in this repository is as follows:
 
 ```markdown
-.
-├── `projectroot`
+├── assets
 │   ├── `type`
 │   │   ├── _template
 │   │   │   ├── _publish
 │   │   │   └── scene_files
-│   │   ├── bridge_structure
-│   │   │   ├── _publish
-│   │   │   ├── lkdev
-│   │   │   │   ├── _publish
-│   │   │   │   └── scene_files
-│   │   │   ├── model
-│   │   │   │   ├── _publish
-│   │   │   │   └── scene_files
-│   │   │   └── text
-│   │   │       ├── _publish
-│   │   │       │   └── v004
-│   │   │       │       ├── 2k
-│   │   │       │       └── 4k
-│   │   │       └── scene_files
+│   │   └── bridge_structure
+│   │       ├── _publish
+│   │       ├── lkdev
+│   │       │   ├── _publish
+│   │       │   └── scene_files
+│   │       ├── model
+│   │       │   ├── _publish
+│   │       │   └── scene_files
+│   │       └── text
+│   │           ├── _publish
+│   │           │   └── v004
+│   │           │       ├── 2k
+│   │           │       └── 4k
+│   │           └── scene_files
+│   ├── lgt
 │   │   ├── hdri
 │   │   │   ├── _publish
 │   │   │   └── scene_files
 │   │   └── light_filters
 │   │       ├── _publish
 │   │       └── scene_files
-│   ├── assets
-│   │   ├── `asset_name`
-│   │   │   ├── _publish
-│   │   │   ├── lkdev
-│   │   │   │   ├── _publish
-│   │   │   │   └── scene_files
-│   │   │   ├── model
-│   │   │   │   ├── _publish
-│   │   │   │   └── scene_files
-│   │   │   └── text
-│   │   │       ├── _publish
-│   │   │       │   └── v020
-│   │   │       │       ├── 2k
-│   │   │       │       └── 4k
-│   │   │       └── scene_files
-│   │   └── `another_asset`
-│   │       └── _publish
-│   │           └── data
-│   │               └── textures
-│   └── shots
-│       ├── `seq`
-│       │   ├── 010
+│   └── veh
+│       ├── _template
+│       │   ├── _publish
+│       │   └── scene_files
+│       ├── bomber
+│       │   └── _publish
+│       │       └── data
+│       │           └── textures
+│       ├── cruiser
+│       │   ├── _publish
+│       │   ├── lkdev
 │       │   │   ├── _publish
-│       │   │   ├── anim
-│       │   │   │   ├── _publish
-│       │   │   │   └── scene_files
-│       │   │   ├── comp
-│       │   │   │   ├── _publish
-│       │   │   │   └── scene_files
-│       │   │   ├── layout
-│       │   │   │   ├── _publish
-│       │   │   │   └── scene_files
-│       │   │   ├── lighting
-│       │   │   │   ├── _publish
-│       │   │   │   ├── _renders
-│       │   │   │   └── scene_files
-│       │   │   └── matchmove
-│       │   │       ├── _publish
-│       │   │       └── scene_files
-│       │   └── _shot_template
+│       │   │   └── scene_files
+│       │   ├── model
+│       │   │   ├── _publish
+│       │   │   └── scene_files
+│       │   └── text
 │       │       ├── _publish
-│       │       ├── anim
-│       │       │   ├── _publish
-│       │       │   └── scene_files
-│       │       ├── comp
-│       │       │   ├── _publish
-│       │       │   └── scene_files
-│       │       ├── layout
-│       │       │   ├── _publish
-│       │       │   └── scene_files
-│       │       └── lighting
-│       │           ├── _publish
-│       │           └── scene_files
-│       └── `another_seq`
-│           └── scene_files
-│               └── usd
-│                   ├── references
-│                   ├── sublayers
-│                   ├── usd_flatten
-│                   └── usd_format
-└── some_other_directory
-    └── some_files
+│       │       │   └── v003
+│       │       │       ├── 2k
+│       │       │       └── 4k
+│       │       └── scene_files
+│       └── transporter
+│           ├── _publish
+│           ├── lkdev
+│           │   ├── _publish
+│           │   └── scene_files
+│           ├── model
+│           │   ├── _publish
+│           │   └── scene_files
+│           └── text
+│               ├── _publish
+│               │   └── v020
+│               │       ├── 2k
+│               │       └── 4k
+│               └── scene_files
+└── shots
+    ├── WK01 (name of the sequence)
+    │   ├── 010
+    │   │   ├── _publish
+    │   │   ├── anim
+    │   │   │   ├── _publish
+    │   │   │   └── scene_files
+    │   │   ├── comp
+    │   │   │   ├── _publish
+    │   │   │   └── scene_files
+    │   │   ├── layout
+    │   │   │   ├── _publish
+    │   │   │   └── scene_files
+    │   │   ├── lighting
+    │   │   │   ├── _publish
+    │   │   │   ├── _renders
+    │   │   │   └── scene_files
+    │   │   └── matchmove
+    │   │       ├── _publish
+    │   │       └── scene_files
+    │   └── _shot_template
+    │       ├── _publish
+    │       ├── anim
+    │       │   ├── _publish
+    │       │   └── scene_files
+    │       ├── comp
+    │       │   ├── _publish
+    │       │   └── scene_files
+    │       ├── layout
+    │       │   ├── _publish
+    │       │   └── scene_files
+    │       └── lighting
+    │           ├── _publish
+    │           └── scene_files
+    └── `seq`
+        └── scene_files
+            └── usd
+                ├── references
+                ├── sublayers
+                ├── usd_flatten
+                └── usd_format
 
 ```
 
