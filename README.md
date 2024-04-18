@@ -16,34 +16,33 @@ The purpose of this repository is to explore and develop utilities that streamli
 To maintain consistency and organization within USD projects, this repository follows a recommended folder structure for organizing assets, shots, sequences, configurations, and outputs. The folder structure used in this repository is as follows:
 
 ```markdown
-project_name/
-├── assets/
-│   ├── models/
-│   │   ├── character/
-│   │   ├── environment/
-│   │   └── props/
-│   ├── textures/
-│   ├── animations/
-├── shots/
-│   ├── shot_01/
-│   │   ├── assets/
-│   │   ├── layouts/
-│   │   └── renders/
-│   ├── shot_02/
-│   │   ├── assets/
-│   │   ├── layouts/
-│   │   └── renders/
-├── sequences/
-│   ├── sequence_01/
-│   ├── sequence_02/
-├── configs/
-│   ├── layers/
-│   ├── variants/
-│   └── references/
-└── output/
-    ├── renders/
-    └── exports/
-```
+`Project_Root
+├── assets
+│   ├── type
+│   │   ├── asset1
+│   │   │   ├── lkdev
+│   │   │   │   ├── scene_files
+│   │   │   │   └── _publish
+│   │   │   ├── model
+│   │   │   │   ├── scene_files
+│   │   │   │   └── _publish
+│   │   │   ├── tex
+│   │   │   │   ├── scene_files
+│   │   │   │   └── _publish
+│   │   │   └── _publish
+│   │   └── asset2
+│   │       ├── lkdev
+│   │       │   ├── scene_files
+│   │       │   └── _publish
+│   │       ├── model
+│   │       │   ├── scene_files
+│   │       │   └── _publish
+│   │       ├── tex
+│   │       │   ├── scene_files
+│   │       │   └── _publish
+│   │       └── _publish
+└── shots
+``
 
 
 This structure provides a clear organization for managing assets, shots, sequences, configurations, and outputs within a USD project.
