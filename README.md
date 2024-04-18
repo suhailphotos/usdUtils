@@ -79,7 +79,7 @@ To maintain consistency and organization within USD projects, this repository fo
 │               │       └── 4k
 │               └── scene_files
 └── shots
-    ├── WK01 (name of the sequence)
+    ├── `seq`
     │   ├── 010
     │   │   ├── _publish
     │   │   ├── anim
