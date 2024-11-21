@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "usdutils"
 version = "0.1.0"
-description = "USD Utilitis"
+description = "USD Utilities"
 authors = ["Suhail <suhailece@gmail.com>"]
-license = "MIT"
 readme = "README.md"
+packages = [{include = "usdutils", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "3.10.10"
@@ -14,7 +14,6 @@ pyopengl = "^3.1.7"
 pyside6 = "^6.6.2"
 pygltflib = "^1.16.2"
 pyfbx = "^0.0.8"
-
 
 [build-system]
 requires = ["poetry-core"]
