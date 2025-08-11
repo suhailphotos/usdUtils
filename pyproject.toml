@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "usdutils", from = "src"}]
 
 [tool.poetry.dependencies]
-python = ">=3.11,<4.0"
+python = ">=3.11,<3.14"
 numpy = "^1.26.4"
 cmake = "^3.28.4"
 pyopengl = "^3.1.7"
