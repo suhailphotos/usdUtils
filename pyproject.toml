@@ -1,20 +1,27 @@
-[tool.poetry]
+[project]
 name = "usdutils"
 version = "0.1.0"
 description = "USD Utilities"
-authors = ["Suhail <suhailece@gmail.com>"]
 readme = "README.md"
-packages = [{include = "usdutils", from = "src"}]
+requires-python = ">=3.11,<3.14"
+authors = [
+  { name = "Suhail", email = "suhailece@gmail.com" },
+]
+dependencies = [
+  "cmake >=3.28.4,<4.0.0",
+  "numpy >=1.26.4,<2.0.0",
+  "pyfbx >=0.0.8,<0.0.9",
+  "pygltflib >=1.16.2,<2.0.0",
+  "pyopengl >=3.1.7,<4.0.0",
+  "pyside6 >=6.6.2,<7.0.0",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.11,<3.14"
-numpy = "^1.26.4"
-cmake = "^3.28.4"
-pyopengl = "^3.1.7"
-pyside6 = "^6.6.2"
-pygltflib = "^1.16.2"
-pyfbx = "^0.0.8"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+  "src/usdutils",
+]
